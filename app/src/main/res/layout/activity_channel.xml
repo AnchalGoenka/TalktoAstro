@@ -1,0 +1,52 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tta.destinigo.talktoastro.activities.ChannelActivity" >
+
+    <android.widget.Toolbar
+            android:id="@+id/toolbarChannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:titleTextColor="@color/white"/>
+
+    <RelativeLayout
+            android:id="@+id/view_chat_live"
+            android:layout_width="410dp"
+            android:visibility="gone"
+            android:layout_height="30dp"
+            android:background="#4CAF50"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarChannel">
+
+        <TextView
+                android:id="@+id/txv_live_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live chat"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/channel_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_chat_live" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

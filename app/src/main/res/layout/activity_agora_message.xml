@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".agora.chat.AgoraMessageActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:orientation="vertical">
+    <include
+            layout="@layout/main_toolbar"
+            android:id="@+id/message_toolbar"/>
+        <LinearLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbarMessage">
+
+            <TextView
+                    android:layout_weight="0.4"
+                    android:id="@+id/txtView_chatTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/chat_end"
+                    android:textColor="@color/black_color" />
+
+            <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_chatTimeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/button_rounded_corners_orange"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+            <Button
+                    android:layout_weight="0.6"
+                    android:id="@+id/btn_endChat"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/color_hazardous_level"
+                    android:text="End Chat"
+                    android:textColor="@color/white"/>
+        </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight_1"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:padding="@dimen/dp10"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:weightSum="2"
+            android:background="@color/white"
+            android:orientation="horizontal">
+        <EditText
+                android:id="@+id/ed_msg"
+                android:layout_weight="1.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:hint="type message..."/>
+        <Button
+                android:id="@+id/btn_send"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="Send"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.AnswerFragment">
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+           android:padding="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:text="Question :"
+                android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+    <TextView
+            android:id="@+id/tv_questionAsked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/bg"
+            android:text="Write Your Question"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="start|top"
+            android:padding="10dp" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer :"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorPrimaryLight"
+                android:id="@+id/rv_AnswerList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"/>
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                    android:text="Write Comment :"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_5sdp"/>
+        <LinearLayout
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                        android:id="@+id/ed_answer_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/edittext_border"
+                        android:ems="10"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:hint="Write Comment"
+                        android:textStyle="italic"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp" />
+                <Button
+                        android:id="@+id/btn_submit_answer"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="Submit"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:paddingRight="@dimen/_30sdp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/submit_btn"
+                        android:layout_gravity="end"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

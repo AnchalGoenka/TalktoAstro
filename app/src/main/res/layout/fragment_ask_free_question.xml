@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".view.AskFreeQuestionFragment">
+<androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+            android:orientation="vertical">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textSize="@dimen/dp16"
+            android:text="TalktoAstro is a leading astrology prediction platform. Here you can talk to India’s best astrologers, tarot reader, Vastu experts or numerologists over call or order report with just Rs 100. Our mission is to provide exceptional services at a minimum cost. Get predictions related to love, marriage, career or finance from the comfort of your home with full privacy from Talktoastro experts." />
+        <TextView
+                android:id="@+id/tv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:textSize="@dimen/dp16"
+                android:text="Disclaimer : This is an astrology forum where you can ask your astrology related questions and get your doubts clarified from India's Top astrologers. However, this is the free astrology question forum for spread of astrology knowledge and not for clarification or analysis of individual birth chart. We don't guarantee any answer or detailed answer from astrologers as astrologer may contribute in this forum as per their free time and comfort."
+               />
+            <TextView
+                    android:id="@+id/tv_show_more_less"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_gravity="right"
+                    android:text="show more"
+                    android:textColor="@color/colorPrimary"  />
+        </LinearLayout>
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/tv_ask_questions"
+            android:padding="@dimen/dp5"
+            android:paddingStart="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Ask  Questions"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20"
+            android:textStyle="bold"/>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card_your_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp2"
+            android:elevation="@dimen/dp10">
+
+        <LinearLayout
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <EditText
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/ed_Question_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:hint="Write Your Question"
+                    android:textStyle="italic"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp" />
+            <Button
+                    android:id="@+id/btn_quetion_submit"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:text=" Submit"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/submit_btn"
+                    android:layout_gravity="end"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_question_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:padding="@dimen/dp10"
+                app:stackFromEnd="true"
+                app:reverseLayout="true"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>

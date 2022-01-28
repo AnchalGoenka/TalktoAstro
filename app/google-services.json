@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "919393071497",
+    "firebase_url": "https://talktoastro-216012.firebaseio.com",
+    "project_id": "talktoastro-216012",
+    "storage_bucket": "talktoastro-216012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919393071497:android:2af704a2c5a257f4113158",
+        "android_client_info": {
+          "package_name": "com.astrologerapp.astrologertta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919393071497-ofpaf74o3eh9opnvgnh3cuj1t8rppkg0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astrologerapp.astrologertta",
+            "certificate_hash": "2d4308157eddcc14a70534d1cb7fb051759c1e87"
+          }
+        },
+        {
+          "client_id": "919393071497-t3k1g1vmrl21mn3qprbpuaeohml831f9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMNpiTu18CgdYcT1--rii5XUcR9cI82VY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919393071497-jdqrivjhuu09n1io6fsrf0r0q6smh757.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919393071497:android:0c9e05a55e7bea5b113158",
+        "android_client_info": {
+          "package_name": "tta.destinigo.talktoastro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919393071497-tavivklubc6nhdce99e4muptgjv815am.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tta.destinigo.talktoastro",
+            "certificate_hash": "2d4308157eddcc14a70534d1cb7fb051759c1e87"
+          }
+        },
+        {
+          "client_id": "919393071497-t3k1g1vmrl21mn3qprbpuaeohml831f9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMNpiTu18CgdYcT1--rii5XUcR9cI82VY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919393071497-jdqrivjhuu09n1io6fsrf0r0q6smh757.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

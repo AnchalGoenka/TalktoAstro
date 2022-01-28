@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="tta.destinigo.talktoastro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+            android:name=".TTABaseAppplication"
+            android:allowBackup="false"
+            android:icon="@mipmap/ic_launcher_foreground"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_foreground"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning"
+            tools:replace="android:allowBackup">
+        <activity android:name=".NewUI.Activity.HomeActivity"
+                android:screenOrientation="portrait">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".agora.chat.ViewChatHistory"
+                android:screenOrientation="portrait"/>
+        <activity android:name=".agora.chat.AgoraMessageActivity"
+                android:screenOrientation="portrait"/>
+        <activity android:name=".activity.KundliDetails"
+                android:screenOrientation="portrait"  />
+        <activity android:name=".activity.FreeKundliActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".activity.NotificationActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".activity.RechargeActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".activity.CustomerSuppportActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".chat.ChatThankYouActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".activity.LoginActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".activities.ChannelActivity"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".activities.MessageActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".activities.UserActivity"
+                android:screenOrientation="portrait" />
+        <!--
+<activity
+                android:name=".activity.PayActivityFragment"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait" />
+        -->
+        <activity
+                android:name=".activity.SplashActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".activity.MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.paytm.pgsdk.PaytmPGActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name="com.razorpay.CheckoutActivity"
+                android:screenOrientation="portrait"
+                tools:ignore="Instantiatable" />
+
+        <meta-data
+                android:name="com.razorpay.ApiKey"
+                android:value="rzp_live_c5qb8WxI0QtmLX" />
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id" />
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+
+        <service
+                android:name="com.google.android.gms.measurement.AppMeasurementService"
+                android:enabled="true"
+                android:exported="false" />
+
+        <receiver
+                android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+                android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+                android:name="firebase_analytics_collection_deactivated"
+                android:value="false"
+                tools:replace="android:value" />
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+
+        <service
+                android:name="com.google.android.gms.analytics.AnalyticsService"
+                android:enabled="true"
+                android:exported="false" />
+        <service android:name=".service.BroadcastService" />
+        <service
+                android:name=".notification.FirebaseMessagingSer"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/app_icon_chat" />
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

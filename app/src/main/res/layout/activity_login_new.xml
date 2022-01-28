@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_layout"
+            android:orientation="vertical">
+
+
+
+            <android.widget.Toolbar
+                    android:id="@+id/toolbarLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    android:title="Login"
+                    android:titleTextColor="@color/white"
+                    app:menu="@menu/channel" />
+
+
+        <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/li_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/li_btn"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_marginTop="@dimen/dp10"
+                            android:id="@+id/img_login"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="@dimen/dp100"
+                            android:minWidth="20dp"
+                            android:minHeight="@dimen/dp10"
+                            android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="TalktoAstro"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/gray"
+                            android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/li_btn"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:layout_marginBottom="@dimen/dp50"
+                        android:orientation="vertical">
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="@dimen/dp5"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:background="@drawable/edit_txt"
+                           >
+
+                        <com.hbb20.CountryCodePicker
+                                android:id="@+id/ccp_login"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="15dp"
+                                app:textSize="15sp" />
+
+                        <EditText
+                                android:id="@+id/txv_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/ccp_login"
+                                android:layout_marginRight="@dimen/dp5"
+                                android:padding="@dimen/dp15"
+                                android:inputType="phone"
+                                android:textSize="20sp"
+                                android:background="@null"
+                                android:drawablePadding="@dimen/dp20"
+                                android:hint="Phone number"
+                                />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                            android:id="@+id/txv_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/edit_txt"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:padding="@dimen/dp15"
+                            android:elevation="@dimen/dp5"
+                            android:drawablePadding="@dimen/dp20"
+                            android:hint="@string/password"
+                            android:textSize="@dimen/dp20"
+                            android:inputType="textPassword"
+                            android:paddingLeft="@dimen/dp10" />
+
+
+                    <Button
+                            android:id="@+id/btn_login"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/strock_fill_orange"
+                            android:hint="@string/login"
+                            android:elevation="@dimen/dp2"
+                            android:textColorHint="@color/whitecolor"
+                            android:textSize="18sp" />
+
+                    <TextView
+                            android:id="@+id/textOr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:text="OR" />
+
+                    <Button
+                            android:id="@+id/btnLoginViaSMS"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:elevation="@dimen/dp2"
+                            android:background="@drawable/strock_fill_orange"
+                            android:text="Login with OTP"
+                            android:textColor="@color/white" />
+
+
+                    <RelativeLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                        <CheckBox
+                                android:id="@+id/checkbox_rember"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/orange_color"
+                                android:paddingLeft="10dp"
+                                android:visibility="gone"
+                                android:text="@string/remember_me"
+                                android:textColor="@color/orange_color" />
+
+                        <TextView
+                                android:id="@+id/txt_forgot_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/forgot_password"
+                                android:textColor="@color/text_navy_blue" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                            android:layout_marginBottom="@dimen/dp10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:visibility="gone"
+                                android:text="@string/if_you_don_t_have_an_account"
+                                android:textColor="@color/orange_color"
+                                android:textSize="15sp" />
+
+                        <TextView
+                                android:id="@+id/txv_dont_have_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/don_t_have_an_account"
+                                android:textColor="@color/text_navy_blue"
+                                android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ProgressBar
+                android:id="@+id/progress_circular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/orange_color"
+                android:visibility="gone">
+
+        </ProgressBar>
+
+    </LinearLayout>
+</layout>

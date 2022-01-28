@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".view.FreeHoroscopeResultFragment">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/ascendant"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_ascendant" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_ascendant_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_ascendant"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/ascendant_lord"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_ascendant_lord" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_ascendant_lord_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_ascendant_lord"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/varna"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_varna" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_varna_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_varna"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/vashya"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_vashya" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_vashya_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_vashya"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/yoni"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_yoni" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_yoni_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_yoni"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/gan"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_gan" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_gan_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_gan"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/nadi"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_nadi" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_nadi_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_nadi"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/signlord"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_signLord" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_signLord_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_signLord"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/sign"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_sign" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_sign_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_sign"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/naksahtra"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_naksahtra" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_naksahtra_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_naksahtra"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/naksahtralord"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_naksahtraLord" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_NaksahtraLord_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_naksahtraLord"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/charan"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_charan" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_charan_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_charan"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/yog"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_yog" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_yog_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_yog"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/karan"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_karan" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_karan_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_karan"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/tithi"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_tithi" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_tithi_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_tithi"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/yunja"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_yunja" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_yunja_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_yunja"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/tatva"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_tatva" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_tatva_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_tatva"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/name_alphabet"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_name_alphabet" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_name_alphabet_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_name_alphabet"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                        android:text="@string/paya"
+                        android:layout_alignParentStart="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="33dp"
+                        tools:layout_editor_absoluteX="16dp" android:id="@+id/txv_paya" android:textSize="18sp"/>
+                <TextView
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="32dp"
+                        tools:layout_editor_absoluteX="307dp" android:id="@+id/txv_paya_val" android:textSize="18sp"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp" android:layout_marginTop="2dp"
+                        android:layout_below="@+id/txv_paya"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:context=".activity.RechargeActivity">
+
+    <include
+            android:id="@+id/toolbar_recharge"
+            layout="@layout/main_toolbar" />
+
+    <com.shuhart.stepview.StepView
+            android:id="@+id/sv_rechargeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+
+            app:sv_animationType="Line"
+            app:sv_doneCircleColor="@color/colorPrimary"
+            app:sv_doneCircleRadius="12dp"
+            app:sv_doneStepLineColor="@color/colorPrimary"
+            app:sv_doneStepMarkColor="@color/colorPrimaryLight_Dark"
+            app:sv_nextStepCircleColor="@color/colorPrimaryLight_Dark"
+            app:sv_nextStepCircleEnabled="true"
+            app:sv_nextStepLineColor="@color/colorPrimaryLight_Dark"
+            app:sv_nextTextColor="@color/white"
+            app:sv_selectedCircleColor="@color/colorPrimary"
+            app:sv_selectedCircleRadius="16dp"
+            app:sv_selectedStepNumberColor="@color/colorPrimaryLight_Dark"
+            app:sv_selectedTextColor="@color/colorPrimary"
+            app:sv_stepLineWidth="1dp"
+            app:sv_stepNumberTextSize="14sp"
+            app:sv_stepPadding="4dp"
+            app:sv_stepViewStyle="@style/StepView"
+            tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/edit_txt"
+            android:id="@+id/frame_Recharge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp5" />
+
+</LinearLayout>

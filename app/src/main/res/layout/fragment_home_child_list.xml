@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <data class="AstrologerListBinding">
+        <variable name="astrologerList"
+                type="tta.destinigo.talktoastro.model.AstrologerListModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+        <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_verified"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/verified"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                tools:layout_editor_absoluteX="396dp"
+                tools:layout_editor_absoluteY="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_margin="@dimen/dp10"
+                app:layout_constraintHorizontal_bias="0.048"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.298"
+                app:srcCompat="@mipmap/default_profile" />
+
+        <TextView
+                android:id="@+id/txv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/blue_name"
+                android:textSize="18sp"
+                android:maxLines="1"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/img_profile"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/txv_expertise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:drawableLeft="@drawable/ic_expertise"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans"
+                android:maxLines="1"
+                android:text="@{astrologerList.expertise}"
+                android:textColor="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txv_name"
+                app:layout_constraintTop_toBottomOf="@+id/txv_name" />
+        <LinearLayout
+                android:id="@+id/ll_exp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txv_name"
+                app:layout_constraintTop_toBottomOf="@+id/txv_language">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_experience"
+                    android:drawablePadding="5dp"
+                    android:text="Exp :"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/gray"
+                    />
+
+        <TextView
+                android:id="@+id/txv_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/gray"
+                 />
+        </LinearLayout>
+        <FrameLayout
+                android:id="@+id/frame_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/txv_language"
+                app:layout_constraintEnd_toStartOf="@+id/btnPhoneStatus"
+                app:layout_constraintTop_toBottomOf="@+id/ll_exp">
+
+        <TextView
+                android:id="@+id/txv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rupee"
+                android:drawablePadding="@dimen/dp5"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/offBlack"
+                android:textSize="@dimen/dp12"
+                android:text=" 00/min "
+                android:textStyle="bold"
+                 />
+            <View
+                    android:visibility="invisible"
+                    android:id="@+id/view_offer"
+                    android:background="#494646"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="0.5dp"/>
+        </FrameLayout>
+        <TextView
+                android:id="@+id/txv_language"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/ic_language"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/open_sans"
+                android:text="@{astrologerList.languages}"
+                android:textColor="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txv_name"
+                app:layout_constraintTop_toBottomOf="@+id/txv_expertise" />
+
+        <RelativeLayout
+                android:visibility="invisible"
+                android:id="@+id/layout_flash_sale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_fill_gradient"
+                android:gravity="start"
+                app:layout_constraintEnd_toStartOf="@+id/btnPhoneStatus"
+                app:layout_constraintStart_toStartOf="@+id/txv_name"
+                app:layout_constraintStart_toEndOf="@+id/textView_total_rating"
+                app:layout_constraintTop_toBottomOf="@+id/frame_price">
+
+            <TextView
+                    android:id="@+id/txv_flash_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+        </RelativeLayout>
+
+
+
+        <!-- <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/img_profile"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/img_profile"
+                app:layout_constraintTop_toBottomOf="@+id/img_profile">
+
+            <ImageView
+                    android:id="@+id/imgStar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_expertise"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="128dp" />
+
+            <ImageView
+                    android:id="@+id/imgStar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_expertise"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="128dp" />
+
+            <ImageView
+                    android:id="@+id/imgStar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_expertise"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="128dp" />
+
+            <ImageView
+                    android:id="@+id/imgStar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_expertise"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="128dp" />
+
+            <ImageView
+                    android:id="@+id/imgStar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_expertise"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="128dp" />
+        </LinearLayout>-->
+
+        <RelativeLayout
+                android:id="@+id/btnPhoneStatus"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:minWidth="80dp"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/frame_price"
+                app:layout_constraintTop_toBottomOf="@+id/txv_language"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                    android:id="@+id/txv_phone_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_txt"
+                android:elevation="@dimen/dp5"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp1"
+                app:layout_constraintEnd_toEndOf="@+id/img_profile"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/img_profile"
+                app:layout_constraintTop_toBottomOf="@+id/img_profile">
+
+            <TextView
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:id="@+id/tv_StarRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" 0 "
+                    android:textColor="@color/colorPrimary" />
+
+            <ImageView
+
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:id="@+id/imgStar5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_expertise" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+                android:id="@+id/textView_total_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableRight="@drawable/ic_thumbs_up_regular"
+                android:drawablePadding="4dp"
+                android:text=""
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="@+id/img_profile"
+                app:layout_constraintStart_toStartOf="@+id/img_profile"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_flash_sale" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

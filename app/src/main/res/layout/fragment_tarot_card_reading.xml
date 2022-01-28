@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.TarotCardReading">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+    <TextView
+            android:id="@+id/tv_about_tarot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="@dimen/_5sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:text="There are a lot of times in our lives where we feel lost and don’t get the motivation we need to move forward. During such times, we ask a lot of questions as to why all these things are happening to use what are happenings and no one can answer those questions for us. However, you still have astrology who can provide you the answers about your life as well as give you predictions. With the help of tarot cards, you can get an insight into your life and what your future beholds for you." />
+    <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="3">
+        <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:elevation="@dimen/_10sdp"
+                android:src="@drawable/tarot_card"
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/iv_first_card"/>
+        <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:elevation="@dimen/_10sdp"
+                android:src="@drawable/tarot_card"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/iv_second_card"/>
+        <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/tarot_card"
+                android:elevation="@dimen/_10sdp"
+                android:translationZ="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:id="@+id/iv_Third_card"/>
+    </LinearLayout>
+
+    <TextView
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Think of your Question And Select above 3 Cards"
+            android:background="@drawable/button_rounded_corners_orange"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:gravity="center"
+        />
+    <TextView
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"
+            android:text="The Tarot Card represents -"
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+            android:gravity="center"
+            />
+    <TextView
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="1.The present feeling of you about yourself.\n
+2.What are your most heartful desires?\n
+3.What are your fears currently?\n
+4.What is going in favour of you?\n
+5. Hurdles in your path."
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+            android:gravity="left" />
+
+    <Button
+            android:id="@+id/btn_getReading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_signup"
+            android:text="Get My Reading"
+            android:textSize="@dimen/dp18"
+            android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

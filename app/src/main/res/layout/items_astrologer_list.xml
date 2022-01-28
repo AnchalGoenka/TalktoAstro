@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+        <ImageView
+                android:id="@+id/iv_verified"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ic_verified"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="4dp" />
+        <ImageView
+                android:id="@+id/iv_notification"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ic_notification_filled"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="396dp"
+                tools:layout_editor_absoluteY="4dp" />
+        <LinearLayout
+                android:id="@+id/ll1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/_14sdp"
+              android:gravity="center"
+              app:layout_constraintStart_toEndOf="@+id/iv_verified"
+              app:layout_constraintTop_toTopOf="parent"
+              android:orientation="vertical">
+             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/default_profile" />
+
+
+             <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_expertise"
+                android:text="67686 "
+                     android:textColor="@color/black"
+                     android:layout_margin="@dimen/_5sdp" />
+             <TextView
+                  android:id="@+id/tv_review"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                     android:fontFamily="@font/sf_pro_display_regular"
+                  android:text="67686 Review  "
+                     android:maxLines="1"
+                     android:textColor="@color/black2" />
+         </LinearLayout>
+        <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Astrologer Name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:maxLines="1"
+                app:layout_constraintStart_toEndOf="@+id/ll1"
+                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+                android:id="@+id/tv_expertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:text="Spiritual Healing Vedic Astrology"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black3"
+                app:layout_constraintStart_toEndOf="@+id/ll1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+        <TextView
+                android:id="@+id/tv_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:text="Experience - 35 years"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black3"
+                app:layout_constraintStart_toEndOf="@+id/ll1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_expertise" />
+        <TextView
+                android:id="@+id/tv_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:maxLines="1"
+                android:layout_marginStart="8dp"
+                android:text="English Hindi"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black3"
+                app:layout_constraintStart_toEndOf="@+id/ll1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_experience" />
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14/Min"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:textColor="@color/black"
+                  />
+
+          <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Now"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:background="@drawable/ic_btn_green_bg" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+
+        <item
+                android:id="@+id/nav_recharge_wallet"
+                android:title="Recharge wallet"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_money"/>
+        <item
+                android:id="@+id/nav_wallet_transactions"
+                android:title="@string/wallet_transactions"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_wallet"/>
+        <item
+                android:id="@+id/nav_call_history"
+                android:title="@string/call_history"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_call"/>
+        <item
+                android:id="@+id/nav_chat_history"
+                android:title="@string/chat_history"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_chat"/>
+        <item
+                android:id="@+id/nav_report_history"
+                android:title="@string/report_history"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_report"/>
+
+
+    </group>
+        <!--<item-->
+                <!--android:id="@+id/nav_online_pooja"-->
+                <!--android:title="@string/online_pooja" app:showAsAction="ifRoom"/>-->
+    <group android:id="@+id/grp2" android:checkableBehavior="single">
+<!--        <item-->
+<!--                android:id="@+id/nav_horoscope"-->
+<!--                android:title="@string/free_horoscope" app:showAsAction="ifRoom"/>-->
+<!--        <item-->
+<!--                android:id="@+id/nav_customer_stories"-->
+<!--                android:title="@string/customer_stories" app:showAsAction="ifRoom"/>-->
+        <item
+                android:title="@string/AskFreeQuestion"
+                android:id="@+id/nav_ask_free_questions"
+                app:showAsAction="always"
+                android:icon="@drawable/questions"/>
+        <item
+                android:title="@string/Free_Kundli"
+                android:id="@+id/nav_free_kundli"
+                app:showAsAction="always"
+                android:icon="@drawable/free_kundli"/>
+        <item
+                android:title="@string/Tarot_Reading"
+                android:id="@+id/nav_tarot_Reading"
+                app:showAsAction="always"
+                android:icon="@drawable/tarot"/>
+       <!-- <item
+                android:title="@string/Free_Astrology_Service"
+                android:id="@+id/nav_free_astrology_service"
+                app:showAsAction="always"
+                android:icon="@drawable/free_kundli"/>-->
+
+        <item
+                android:id="@+id/nav_customer_support"
+                android:title="@string/customer_support"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_support"/>
+        <item
+                android:id="@+id/nav_settings"
+                android:title="@string/nav_settings" app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_setting"/>
+        <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/nav_about_us"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_aboutus"/>
+        <item
+                android:id="@+id/nav_rate_us"
+                android:title="@string/rate_us"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_rateus"/>
+        <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/privacy_policy"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_privacy"/>
+        <item
+                android:id="@+id/nav_terms_conditions"
+                android:title="@string/termsandconditions"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_aboutus"/>
+
+
+        <item
+                android:id="@+id/nav_how_it_works"
+                android:title="@string/how_it_works"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_howitworks"/>
+
+        <item
+                android:id="@+id/nav_share"
+                android:title="@string/share_with_friends"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_share"/>
+        <item
+                android:id="@+id/nav_login"
+                android:title="@string/login"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_logout"/>
+        <!--<item-->
+                <!--android:id="@+id/nav_logout"-->
+                <!--android:title="@string/loginout"-->
+                <!--app:showAsAction="ifRoom"/>-->
+    </group>
+</menu>

@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">TalktoAstro</string>
+    <string name="agora_app_id" translatable="false">11a0c7835f9a48b7bbf8cfcd6692320b</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Movies</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_astrologer_expertise">Search astrologer, expertise</string>
+    <string name="call">Talk To Astrologers</string>
+    <string name="report">Get Manual Report</string>
+    <string name="chat">Chat</string>
+    <string name="pooja">Pooja</string>
+    <string name="horoscopes">Horoscopes</string>
+    <string name="login">Login</string>
+    <string name="loginout">Log Out</string>
+    <string name="recharge_through">Pay online through</string>
+    <string name="topup_your_account">Topup your account</string>
+    <string name="enter_amount">00</string>
+    <string name="debit_card_credit_card_netbanking_upi">Debit Card, Credit Card, Netbanking, UPI</string>
+    <string name="paytm">Paytm</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">Create Account</string>
+    <string name="don_t_have_an_account">Don\'t have an account? Create Account</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+    <string name="facebook_app_id">[APP_ID]</string>
+    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="wallet_transactions">Wallet Transactions</string>
+    <string name="online_pooja">Online Pooja</string>
+    <string name="free_horoscope">Free Horoscope</string>
+    <string name="customer_stories">Customer Stories</string>
+    <string name="termsandconditions">Terms and Conditions</string>
+    <string name="AskFreeQuestion">Ask Free Questions</string>
+    <string name="Free_Kundli">Free Kundli</string>
+    <string name="Tarot_Reading">Tarot Card Reading</string>
+    <string name="Free_Astrology_Service">Free Astrology Service</string>
+    <string name="share_with_friends">Share with Friends</string>
+    <string name="coupan_code">Coupan code</string>
+    <string name="apply">Apply</string>
+    <string name="proceed">Proceed</string>
+    <string name="your_balance">Your balance</string>
+    <string name="gender">Gender</string>
+    <string name="full_name">Full Name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="place_of_birth">Place of birth</string>
+    <string name="birth_date">Birth Date:</string>
+    <string name="dd_mm_yyyy">mm/dd/yyyy</string>
+    <string name="hh_mm_ss">hh:mm</string>
+    <string name="birth_time">Birth Time:</string>
+    <string name="your_question">Your Question</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="by_continuing">by continuing, you agree to %1$s</string>
+    <string name="terms_and_condition_link">Terms and Conditions</string>
+    <string name="already_have_an_account">Already have an account? %1$s</string>
+    <string name="email">Email</string>
+    <string name="update">Update</string>
+    <string name="id">Id:</string>
+    <string name="order_id">Order Id:</string>
+    <string name="talktime_value">Talktime Value:</string>
+    <string name="amount_paid">Amount Paid:</string>
+    <string name="transaction_status">Transaction Status:</string>
+    <string name="payment_time">Payment Time:</string>
+    <string name="call_history">Call History</string>
+    <string name="report_history">Report History</string>
+    <string name="chat_history">Chat History</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="how_it_works">How it works</string>
+    <string name="submitbutton">Submit</string>
+
+    /**
+    // Free horoscope
+    */
+    <string name="ascendant">Ascendant</string>
+    <string name="ascendant_lord">Ascendant_lord</string>
+    <string name="varna">Varna</string>
+    <string name="vashya">Vashya</string>
+    <string name="yoni">Yoni</string>
+    <string name="gan">Gan</string>
+    <string name="nadi">Nadi</string>
+    <string name="signlord">SignLord</string>
+    <string name="sign">Sign</string>
+    <string name="naksahtra">Naksahtra</string>
+    <string name="naksahtralord">NaksahtraLord</string>
+    <string name="charan">Charan</string>
+    <string name="yog">Yog</string>
+    <string name="karan">Karan</string>
+    <string name="tithi">Tithi</string>
+    <string name="yunja">Yunja</string>
+    <string name="tatva">Tatva</string>
+    <string name="name_alphabet">Name_alphabet</string>
+    <string name="paya">Paya</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="timezone">Timezone:</string>
+    <string name="select_rating">Select rating:</string>
+
+    /**
+    // Fonts strings
+    */
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">open_sans</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_black">open_sans_semibold</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+    <string name="enter_old_password">Enter old password</string>
+    <string name="enter_new_password">Enter new password</string>
+
+    /**
+    // Call history localized strings.
+    */
+    <string name="astrologer_name">Astrologer:</string>
+    <string name="call_id">Call id:</string>
+    <string name="call_duration">Call duration:</string>
+    <string name="price">Amount:</string>
+    <string name="status">Status:</string>
+    <string name="call_time">Call time:</string>
+    <string name="service">Service:</string>
+    <string name="place">Place:</string>
+    <string name="date">Date:</string>
+    <string name="time">Time:</string>
+    <string name="requirement">Requirement:</string>
+    <string name="message">Message:</string>
+    <string name="updated_at">Updated At:</string>
+    <string name="call_history_is_empty">Call history is empty.</string>
+    <string name="searcharticles">Search articles</string>
+
+    //============= Thank you page string =========================
+    <string name="for_initiating_chat_with">For initiating a chat session</string>
+    <string name="answer_chat_call">You will join chat room shortly with %1$s</string>
+    <string name="for_ordering_your_report_to">For Ordering your Report to</string>
+    <string name="for_consulting_with_astrologer">For consulting with Astrologer</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="answer_time_sms">You will receive sms notification for report submission within 48 Hrs</string>
+    <string name="answer_time_call">You will receive a call shortly from %1$s on your registered phone number (%2$s)</string>
+
+    // ======== Message Activity =================
+
+    <string name="chat_end">Chat ends in:</string>
+
+    // ===== Setting page ========================
+    <string name="notification">Notification</string>
+    <string name="enable_notification">Enable Notification</string>
+
+    //== main fragment page======
+
+    <string name="starting_from_per_min">Starting from </string>
+    <string name="starting_from_per_min_2">10 </string>
+    <string name="starting_from_per_min_3">per minute</string>
+    <string name="starting_from_only">Starting from </string>
+    <string name="starting_from_only_2">250 </string>
+    <string name="starting_from_only_3">only</string>
+    <string name="starting_from_only_chat">10 </string>
+    <string name="service_charge">Service Charge (%1$s)</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_email_id">Enter Email-id</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+
+    <string name="type_message">Type message</string>
+    <string name="userAvatar">User avatar</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_chat">Start New Chat</string>
+    <string name="Create_public_channel">Create public channel</string>
+    <string name="Create_private_channel">Create private channel</string>
+    <string name="RegId">Reg Id:</string>
+    <string name="fcm">FCM</string>
+    <string name="certPin">Pin certificate bundle</string>
+    <string name="unregister_fcm">Unregister FCM Token</string>
+    <string name="Create_public_channel_withOption">Create Pub Ch with Options</string>
+    <string name="Create_private_channel_withOption">Create Pri Ch with Options</string>
+    <string name="Search_channel_by_unique_name">Search channel by unique name</string>
+    <string name="update_token">Update token</string>
+    <string name="Options">Options</string>
+    <string name="logout">Logout Client</string>
+    <string name="user_info_activity">User info activity</string>
+    <string name="simulate_crash">Simulate crash</string>
+    <string name="simulate_crash_in_chat_client">in ChatClient.cpp</string>
+    <string name="simulate_crash_in_tm_client">in TMClient.cpp</string>
+    <string name="title_add_channel">Create channel</string>
+    <string name="title_find_channel">Find channel</string>
+    <string name="search">Search</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_topic">Change Topic</string>
+    <string name="add_member">Add</string>
+    <string name="select_action">Select an option</string>
+    <string name="channel_invite">Channel Invite</string>
+    <string name="channel_invite_message">You got a Channel Invite. Join it?</string>
+    <string name="join">Join</string>
+    <string name="decline">Decline</string>
+    <string name="conversation">Conversation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_channel">ChannelActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_update_friendly_name">Enter a friendly name</string>
+    <string name="title_update_topic">Enter a topic</string>
+    <string name="title_update_message">Update message</string>
+    <string name="title_add_channel_name">Channel Friendly Name</string>
+    <string name="title_invite_member">Invite member</string>
+    <string name="title_add_member">Add member</string>
+    <string name="title_search_channel_unique_name">Search Channel by Unique Name</string>
+    <string name="title_remove_member">Remove member</string>
+    <string name="OK">OK</string>
+    <string name="invite_member">Invite Member</string>
+    <string name="title_update_attributes">Update message attributes</string>
+
+    <string name="_sign_up_here">\tSign Up Here</string>
+    <string name="if_you_don_t_have_an_account">Don’t have an account?</string>
+    <string name="remember_me">Remember me?</string>
+    <string name="default_notification_channel_id">123</string>
+    <string name="reconnecting">reconnecting</string>
+    <string name="Disconnect">disconnect</string>
+    <string name="account_offline">account offline</string>
+    <string name="send_msg_failed">Failed to send message</string>
+    <string name="peer_offline">Peer is offline</string>
+    <string name="message_cached">Message cached by server</string>
+    <string name="chat_with_astrologer">Chat with Astrologer</string>
+    <string name="birth_time_rectification">Birth Time Rectification</string>
+    <string name="astrology_articles">Astrology Articles</string>
+    <string name="free_kundali">Free Kundali</string>
+    <string name="tarot_card_readings">Tarot card Readings</string>
+    <string name="life_prediction_report">Life \nPrediction Report</string>
+
+
+    // agora
+
+</resources>

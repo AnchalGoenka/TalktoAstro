@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/ll_question_list"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/bg"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+                android:id="@+id/tv_question_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:text="Ques"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Write Your Question"
+            android:textColor="@color/black"
+            android:gravity="start|top"
+            android:padding="10dp" />
+    </LinearLayout>
+</LinearLayout>

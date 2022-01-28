@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data class="NewHomeArticleListBinding">
+        <variable name="newHomeArticleListModel"
+                type="tta.destinigo.talktoastro.model.ArticleList"/>
+    </data>
+<LinearLayout
+        android:id="@+id/ll_article_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="vertical">
+    <ImageView
+            android:id="@+id/iv_article"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/tv_home_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:text="Ashlesha Nakshatra"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sf_pro_display_semibold"/>
+
+</LinearLayout>
+</layout>

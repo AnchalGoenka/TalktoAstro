@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="8">
+        <ImageView
+                android:id="@+id/iv_customtoolbar_backHumber"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/back_icon" />
+        <TextView
+                android:id="@+id/tv_customtoolbar_title"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Talk with Astrologer"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_2sdp"/>
+            <ImageView
+                    android:id="@+id/iv_customtoolbar_Search"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:src="@drawable/ic_search" />
+            <ImageView
+                    android:id="@+id/iv_customtoolbar_wallet"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:src="@drawable/wallet" />
+            <TextView
+                    android:id="@+id/iv_customtoolbar_balance"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                   android:text="100"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/bg"/>
+            <ImageView
+                    android:id="@+id/iv_customtoolbar_filter"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:src="@drawable/ic_filter" />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+            <TextView
+                    android:id="@+id/tv_customToolbar_feature1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:text="@string/chat_with_astrologer"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_7sdp"
+                    android:drawableStart="@drawable/ic_msg_icon"
+                    android:background="@drawable/ic_rectangle"/>
+
+            <TextView
+                    android:id="@+id/tv_customToolbar_feature2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/chat_with_astrologer"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_7sdp"
+                    android:drawableStart="@drawable/ic_report_icon"
+                    android:background="@drawable/ic_rectangle"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

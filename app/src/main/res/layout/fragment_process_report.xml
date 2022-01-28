@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".view.ProcessReportFragment">
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <EditText
+                    android:id="@+id/txv_name_process_report"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                    android:id="@+id/textView2"
+                    style="@style/style_body_title_h1_regular_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/gender"
+                    app:layout_constraintBottom_toBottomOf="@+id/radioGroup_process_report"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/radioGroup_process_report" />
+
+            <RadioGroup
+                    android:id="@+id/radioGroup_process_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/txv_birth_place_process_report">
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/male"
+                        android:textColor="@android:color/secondary_text_dark" />
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/female"
+                        android:textColor="@android:color/secondary_text_dark" />
+            </RadioGroup>
+
+            <EditText
+                    android:id="@+id/txv_birth_place_process_report"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:hint="@string/place_of_birth"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txv_name_process_report" />
+
+            <TextView
+                    android:id="@+id/txv_birth_date"
+                    style="@style/style_body_title_h1_regular_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/birth_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup_process_report" />
+
+            <TextView
+                    android:id="@+id/txv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/dd_mm_yyyy"
+                    android:textColor="@android:color/secondary_text_dark"
+                    app:layout_constraintBottom_toBottomOf="@+id/txv_birth_date"
+                    app:layout_constraintStart_toStartOf="@+id/radioGroup_process_report"
+                    app:layout_constraintTop_toTopOf="@+id/txv_birth_date" />
+
+            <TextView
+                    android:id="@+id/txv_birth_time"
+                    style="@style/style_body_title_h1_regular_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/birth_time"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txv_birth_date" />
+
+<!--            <TextView-->
+<!--                    android:id="@+id/txv_process_report_birth_time_val"-->
+<!--                    style="@style/style_body_title_h1_regular_medium"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:drawableEnd="@drawable/ic_clock_regular"-->
+<!--                    android:drawablePadding="5dp"-->
+<!--                    android:text="@string/hh_mm_ss"-->
+<!--                    android:textColor="@android:color/secondary_text_dark"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txv_date"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txv_date" />-->
+
+                        <Spinner
+                                android:id="@+id/spinner_hours"
+                                style="@android:style/Widget.Holo.Light.Spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="35dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/txv_birth_time"
+                                app:layout_constraintStart_toEndOf="@+id/txv_birth_time"
+                                app:layout_constraintTop_toTopOf="@+id/txv_birth_time" />
+
+                        <Spinner
+                                android:id="@+id/spinner_minutes"
+                                style="@android:style/Widget.Holo.Light.Spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                app:layout_constraintStart_toEndOf="@+id/spinner_hours"
+                                app:layout_constraintTop_toTopOf="@+id/spinner_hours" />
+
+                        <Spinner
+                                android:id="@+id/spinner_am_pm"
+                                style="@android:style/Widget.Holo.Light.Spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                app:layout_constraintStart_toEndOf="@+id/spinner_minutes"
+                                app:layout_constraintTop_toTopOf="@+id/spinner_hours" />
+
+            <TextView
+                    android:id="@+id/txv_question"
+                    style="@style/style_body_title_h1_regular_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/your_question"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txv_birth_time" />
+
+            <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txv_question" />
+
+            <ImageView
+                    android:id="@+id/imageCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_calendar"
+                    app:layout_constraintBottom_toBottomOf="@+id/txv_date"
+                    app:layout_constraintStart_toEndOf="@+id/txv_date"
+                    app:layout_constraintTop_toTopOf="@+id/txv_date" />
+
+            <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_signup"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <TextView
+                    android:id="@+id/textView"
+                    style="@style/style_body_title_h1_regular_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="@+id/txv_birth_date"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

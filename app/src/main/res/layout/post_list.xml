@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:padding="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="vertical">
+    <WebView
+            android:layout_gravity="center"
+            android:id="@+id/wv_YouTube"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight_1"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:ignore="WebViewLayout" />
+   <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:gravity="center"/>-->
+    <TextView
+            android:id="@+id/tv_para"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="paragraph"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:layout_margin="@dimen/_5sdp"/>
+
+
+    <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020-12-06"
+            android:gravity="right"
+            android:layout_gravity="right"/>
+
+</LinearLayout>

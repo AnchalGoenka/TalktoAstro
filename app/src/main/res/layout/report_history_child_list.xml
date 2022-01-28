@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ReportHistoryListBinding">
+
+        <variable
+                name="reportHistoryList"
+                type="tta.destinigo.talktoastro.model.ReportHistoryModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryLight_1">
+
+<!--            <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_id"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="@string/id" />-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_id_val"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:text="@{reportHistoryList.id}" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@color/colorPrimaryLight" />-->
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/txv_report_history_astro_name"
+                        style="@style/style_body_title_h1_regular_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/astrologer_name" />
+
+                <TextView
+                        android:id="@+id/txv_report_history_astro_name_val"
+                        style="@style/style_body_title_h1_regular_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@{reportHistoryList.astroName}" />
+
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimaryLight" />
+
+
+<!--            <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_service_id"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="@string/service" />-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_service_id_val"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:text="@{reportHistoryList.serviceId}" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@color/colorPrimaryLight" />-->
+
+
+<!--            <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_name"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        style="@style/style_body_title_h1_regular_small"/>-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_name_val"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:text="@{reportHistoryList.name}"-->
+<!--                        style="@style/style_body_title_h1_regular_small"/>-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:background="@color/color_light_grey" />-->
+
+            //5
+
+<!--            <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_gender"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="@string/gender" />-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_gender_val"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:text="@{reportHistoryList.gender}" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@color/colorPrimaryLight" />-->
+
+<!--            //6-->
+
+<!--            <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_place"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="@string/place" />-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_place_val"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:text="@{reportHistoryList.place}" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@color/colorPrimaryLight" />-->
+
+<!--            //7-->
+
+<!--            <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_date"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="@string/date" />-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_date_val"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:text="@{reportHistoryList.date}" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@color/colorPrimaryLight" />-->
+
+<!--            //8-->
+
+<!--            <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_time"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="@string/time" />-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_time_val"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:text="@{reportHistoryList.time}" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@color/colorPrimaryLight" />-->
+
+<!--            //9-->
+
+<!--            <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_requirement"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="@string/requirement" />-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_requirement_val"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:text="@{reportHistoryList.requirement}" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@color/colorPrimaryLight" />-->
+
+<!--            //10-->
+
+<!--            <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_message"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginStart="16dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="@string/message" />-->
+
+<!--                <TextView-->
+<!--                        android:id="@+id/txv_report_history_message_val"-->
+<!--                        style="@style/style_body_title_h1_regular_small"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="16dp"-->
+<!--                        android:text="@{reportHistoryList.message}" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@color/colorPrimaryLight" />-->
+
+            //11
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/txv_report_history_status"
+                        style="@style/style_body_title_h1_regular_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/status" />
+
+                <TextView
+                        android:id="@+id/txv_report_history_status_val"
+                        style="@style/style_body_title_h1_regular_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@{reportHistoryList.status}" />
+
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimaryLight" />
+
+            //12
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/txv_report_history_updated_at"
+                        style="@style/style_body_title_h1_regular_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/updated_at" />
+
+                <TextView
+                        android:id="@+id/txv_report_history_updated_at_val"
+                        style="@style/style_body_title_h1_regular_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@{reportHistoryList.updatedAt}" />
+
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimaryLight" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
